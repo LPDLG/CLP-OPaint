@@ -6,9 +6,9 @@ Outpainting Chinese landscape paintings requires simultaneously preserving macro
 
 ## Code
 ### Requirements
-PyTorch >= 1.10.1;
-python >= 3.7;
-CUDA >= 11.3;
+PyTorch >= 1.11.1;
+python >= 3.8;
+CUDA >= 11.6;
 torchvision;
 
 We will upload the training as well as the test code at an oppropriate time!
