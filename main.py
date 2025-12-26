@@ -131,7 +131,6 @@ if __name__ == '__main__':
     iteration = 1
 
     if resume_path and os.path.isfile(resume_path):
-        print(f"=> 加载检查点 '{resume_path}'")
         checkpoint = torch.load(resume_path)
         
         start_epoch = checkpoint['epoch']
@@ -223,7 +222,6 @@ if __name__ == '__main__':
             f.write(loss_line + "\n")
         
         if (epoch + 1) % 10 == 0:
-            print(f"\nEpoch {epoch} 损失摘要:")
             for loss_name, loss_value in epoch_losses.items():
                 if isinstance(loss_value, torch.Tensor):
                     loss_value = loss_value.item()
